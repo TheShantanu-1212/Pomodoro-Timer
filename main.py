@@ -58,8 +58,8 @@ def countdown(count):
     text from count (seconds) to 0 (seconds).
     """
     global timer
-    min_remaining = int(count // 60)
-    sec_remaining = int(count % 60)
+    min_remaining = count // 60
+    sec_remaining = count % 60
     canvas.itemconfig(timer_text, text=f"{min_remaining:02d}:{sec_remaining:02d}")
 
     if count > 0:
