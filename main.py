@@ -76,7 +76,7 @@ window.config(padx=50, pady=3, bg=YELLOW)
 
 # Creating a canvas for the tomato image and the timer text
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_pic = PhotoImage(file="tomato.png")
+tomato_pic = PhotoImage(file="assets/tomato.png")
 canvas.create_image(100, 112, image=tomato_pic)
 timer_text = canvas.create_text(
     100, 130, text="", fill="white", font=(FONT_NAME, 30, "bold")
